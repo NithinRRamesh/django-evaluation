@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for employee in employees %}
+<a href="http://localhost:8000/employee/{{employee.employee_id}}">{{employee.employee_name}}</a><br>
+{% endfor %}
+</body>
+</html>
